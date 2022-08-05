@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storyboard - Pizarrón</title>
+
+    <link rel="shortcut icon" type="image/png" href="img/logo.png">
+    <link rel="stylesheet" href="css/pizarra.css">
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container__header">
+            <div class="logo">
+                <a href="#"><img src="img/logo.png" alt="logo"></a>
+            </div>
+            <div class="container__nav">
+                <nav id="nav">
+                    <ul>
+                        <li><a href="Index.html" class="select">Conocenos</a></li>
+                        <li><a href="quees.html" class="nav__item">¿Qué es?</a></li>
+                        <li><a href="clasificacion.html" class="nav__item">Clasificación</a></li>
+                        <li><a href="razones.html" class="nav__item">Razones</a></li>
+                        <li><a href="haceruno.html" class="nav__item">¿Cómo hacer uno?</a></li>
+                        <li><a href="#foot" class="nav__item">Contacto</a></li>
+                    </ul>
+                </nav>
+                <div class="btn__menu" id="btn_menu">
+                    <button class="ham">
+                        <span class="br-1"></span>
+                        <span class="br-2"></span>
+                        <span class="br-3"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main-pizarra">
+        <section class="pizarra">
+            <div class="container-pizarra">
+                <input type="button" class="rosa" id="rosita"></button>
+                <input type="button" class="azul" id="azul"></button>
+                <input type="button" class="verde" id="verde"></button>
+                <input type="button" class="amarillo" id="amarillo"></button>
+                <input type="button" class="rojo" id="rojo"></button>
+                <input type="button" class="lila" id="lila"></button>
+
+                <input type="button" class="tamaño1" id="tamaño1"></button>
+                <input type="button" class="tamaño2" id="tamaño2"></button>
+                <input type="button" class="tamaño3" id="tamaño3"></button>
+                <input type="button" class="borrar" id="borrar" value="goma"></button>
+                <canvas width="1200px" height="500px" id="area_de_dibujo"></canvas>
+                <div class="ajustar">
+                    <p class="ajustar-ancho">
+                        Usa + y - para cambiar el ancho
+                        <span id="ancho">
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+    <script src="js/pizarra.js"></script>
+</body>
+
+</html>
